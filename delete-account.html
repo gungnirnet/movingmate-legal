@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MovingMate — Delete account &amp; data</title>
+  <meta name="description" content="Request deletion of your MovingMate account and synced data.">
+  <link rel="icon" href="app_icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f4f5; --surface: #fff; --text: #18181b; --muted: #52525b;
+      --border: #e4e4e7; --accent: #2563eb; --accent-soft: #eff6ff;
+      --radius: 14px; --max: 720px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #09090b; --surface: #18181b; --text: #fafafa; --muted: #a1a1aa;
+        --border: #27272a; --accent: #60a5fa; --accent-soft: #172554;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Inter, system-ui, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.65;
+    }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 2rem;
+    }
+    .brand { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.5rem; }
+    .brand img { width: 40px; height: 40px; border-radius: 11px; border: 1px solid var(--border); }
+    h1 { margin: 0 0 .5rem; font-size: 1.6rem; letter-spacing: -.02em; }
+    .lead { color: var(--muted); margin: 0 0 1.5rem; }
+    h2 { font-size: 1rem; margin: 1.5rem 0 .5rem; }
+    p, li { color: var(--muted); }
+    ul { padding-left: 1.2rem; }
+    .steps { background: var(--accent-soft); border-radius: 10px; padding: 1rem 1.2rem; margin: 1rem 0; }
+    .steps ol { margin: 0; padding-left: 1.2rem; color: var(--text); }
+    .email {
+      display: inline-block; margin-top: .5rem; padding: .6rem 1rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; font-weight: 600; text-decoration: none; color: var(--accent);
+    }
+    .lang { display: flex; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .lang button {
+      border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+      border-radius: 999px; padding: .35rem .75rem; cursor: pointer; font-size: .85rem;
+    }
+    .lang button.active { border-color: var(--accent); color: var(--accent); }
+    section { display: none; }
+    section.active { display: block; }
+    footer { margin-top: 2rem; text-align: center; font-size: .85rem; color: var(--muted); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="brand">
+        <img src="app_icon.png" width="40" height="40" alt="MovingMate">
+        <strong>MovingMate · GungnirNet</strong>
+      </div>
+
+      <nav class="lang" aria-label="Language">
+        <button type="button" data-lang="en" class="active">English</button>
+        <button type="button" data-lang="fr">Français</button>
+        <button type="button" data-lang="nb">Norsk</button>
+      </nav>
+
+      <section id="en" class="active" lang="en">
+        <h1>Delete your account &amp; data</h1>
+        <p class="lead">MovingMate works offline without an account. If you created a cloud account, you can request full deletion of your account and synced data.</p>
+
+        <h2>How to request deletion</h2>
+        <div class="steps">
+          <ol>
+            <li>Send an email from the address linked to your MovingMate account.</li>
+            <li>Subject: <strong>Account deletion request</strong></li>
+            <li>We confirm and process your request within <strong>30 days</strong>.</li>
+          </ol>
+        </div>
+        <a class="email" href="mailto:movingmate@gungnirnet.eu?subject=MovingMate%20account%20deletion%20request">movingmate@gungnirnet.eu</a>
+
+        <h2>What is deleted</h2>
+        <ul>
+          <li>Your account (email, user ID)</li>
+          <li>Cloud-synced inventory, moves, and invite data</li>
+          <li>Synced condition photos (if any)</li>
+          <li>Billing entitlements linked to your account (purchase records may be retained as required by tax law)</li>
+        </ul>
+
+        <h2>What stays on your device</h2>
+        <p>Data stored only on your phone (offline inventory, local backups) is not deleted remotely. Uninstall the app or use Settings → Backup to remove local data.</p>
+
+        <h2>Partial deletion (without deleting your account)</h2>
+        <p>You can delete individual items, photos, or moves inside the app. To remove all cloud data but keep your account, email us with <strong>Partial data deletion</strong> in the subject.</p>
+
+        <p><a href="index.html">Privacy policy</a></p>
+      </section>
+
+      <section id="fr" lang="fr">
+        <h1>Supprimer votre compte et vos données</h1>
+        <p class="lead">MovingMate fonctionne hors ligne sans compte. Si vous avez créé un compte cloud, vous pouvez demander la suppression complète de votre compte et des données synchronisées.</p>
+
+        <h2>Comment demander la suppression</h2>
+        <div class="steps">
+          <ol>
+            <li>Envoyez un e-mail depuis l'adresse liée à votre compte MovingMate.</li>
+            <li>Objet : <strong>Demande de suppression de compte</strong></li>
+            <li>Nous traitons la demande sous <strong>30 jours</strong>.</li>
+          </ol>
+        </div>
+        <a class="email" href="mailto:movingmate@gungnirnet.eu?subject=Demande%20de%20suppression%20de%20compte%20MovingMate">movingmate@gungnirnet.eu</a>
+
+        <h2>Données supprimées</h2>
+        <ul>
+          <li>Votre compte (e-mail, identifiant utilisateur)</li>
+          <li>Inventaire cloud, déménagements et invitations</li>
+          <li>Photos d'état synchronisées (le cas échéant)</li>
+          <li>Droits de facturation liés au compte (les preuves d'achat peuvent être conservées selon la loi fiscale)</li>
+        </ul>
+
+        <h2>Données sur l'appareil</h2>
+        <p>Les données stockées uniquement sur votre téléphone ne sont pas supprimées à distance. Désinstallez l'app ou utilisez Paramètres → Sauvegarde pour effacer les données locales.</p>
+
+        <h2>Suppression partielle (sans supprimer le compte)</h2>
+        <p>Vous pouvez supprimer des articles, photos ou déménagements dans l'app. Pour effacer toutes les données cloud en conservant le compte, écrivez-nous avec <strong>Suppression partielle des données</strong> en objet.</p>
+
+        <p><a href="index.html">Politique de confidentialité</a></p>
+      </section>
+
+      <section id="nb" lang="nb">
+        <h1>Slett konto og data</h1>
+        <p class="lead">MovingMate fungerer offline uten konto. Hvis du opprettet en skykonto, kan du be om full sletting av kontoen og synkroniserte data.</p>
+
+        <h2>Slik ber du om sletting</h2>
+        <div class="steps">
+          <ol>
+            <li>Send e-post fra adressen knyttet til MovingMate-kontoen din.</li>
+            <li>Emne: <strong>Forespørsel om kontosletting</strong></li>
+            <li>Vi behandler forespørselen innen <strong>30 dager</strong>.</li>
+          </ol>
+        </div>
+        <a class="email" href="mailto:movingmate@gungnirnet.eu?subject=MovingMate%20kontosletting">movingmate@gungnirnet.eu</a>
+
+        <h2>Hva som slettes</h2>
+        <ul>
+          <li>Kontoen din (e-post, bruker-ID)</li>
+          <li>Skysynkronisert inventar, flyttinger og invitasjoner</li>
+          <li>Synkroniserte tilstandsbilder (hvis noen)</li>
+          <li>Faktureringsrettigheter knyttet til kontoen (kjøpsbevis kan beholdes etter skattelov)</li>
+        </ul>
+
+        <h2>Data på enheten</h2>
+        <p>Data som kun lagres på telefonen slettes ikke eksternt. Avinstaller appen eller bruk Innstillinger → Sikkerhetskopi for å fjerne lokale data.</p>
+
+        <h2>Delvis sletting (uten å slette kontoen)</h2>
+        <p>Du kan slette enkeltelementer, bilder eller flyttinger i appen. For å fjerne all skydata men beholde kontoen, send e-post med <strong>Delvis datasletting</strong> i emnet.</p>
+
+        <p><a href="index.html">Personvernerklæring</a></p>
+      </section>
+    </div>
+    <footer>© GungnirNet · <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a></footer>
+  </div>
+  <script>
+    const buttons = document.querySelectorAll('.lang button');
+    const sections = document.querySelectorAll('section');
+    buttons.forEach(btn => btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      buttons.forEach(b => b.classList.toggle('active', b === btn));
+      sections.forEach(s => s.classList.toggle('active', s.id === lang));
+      document.documentElement.lang = lang === 'nb' ? 'nb' : lang;
+    }));
+  </script>
+</body>
+</html>
