@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MovingMate — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for MovingMate by GungnirNet">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #fff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #2563eb;
+      --border: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --card: #1a1a1a;
+        --text: #f5f5f5;
+        --muted: #aaa;
+        --accent: #60a5fa;
+        --border: #333;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 1rem; }
+    h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+    .meta { color: var(--muted); font-size: .9rem; margin: 0; }
+    nav.lang {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    nav.lang a {
+      padding: .35rem .75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      font-size: .875rem;
+    }
+    nav.lang a:hover, nav.lang a.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    main { padding: 2rem 0 3rem; }
+    section { display: none; }
+    section.active { display: block; }
+    section h2 {
+      font-size: 1.05rem;
+      margin: 1.75rem 0 .5rem;
+      padding-top: .5rem;
+      border-top: 1px solid var(--border);
+    }
+    section h2:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+    p, li { color: var(--text); }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--accent); }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 1rem;
+      color: var(--muted);
+      font-size: .85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>MovingMate — Privacy Policy</h1>
+      <p class="meta">GungnirNet · Version 2026-07-07 · Contact: <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a></p>
+      <nav class="lang" aria-label="Language">
+        <a href="#en" data-lang="en" class="active">English</a>
+        <a href="#fr" data-lang="fr">Français</a>
+        <a href="#nb" data-lang="nb">Norsk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="en" class="active" lang="en">
+      <h2>1. Who we are</h2>
+      <p>MovingMate is published by <strong>GungnirNet</strong>, an independent software developer (sole proprietor; Norwegian ENK registration planned). The app is listed on Google Play under « GungnirNet ». For data protection questions or to exercise your rights, contact <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a>. We act as data controller for personal data described below.</p>
+
+      <h2>2. What we collect</h2>
+      <ul>
+        <li><strong>Account:</strong> email address and authentication identifiers (Supabase Auth).</li>
+        <li><strong>Inventory &amp; moves:</strong> box/furniture descriptions, rooms, dimensions, values, QR identifiers, move names, invite codes, and data you choose to sync to the cloud.</li>
+        <li><strong>Condition photos (optional, paid plans):</strong> JPEG images you capture to document item state (packed, pickup, delivery) for insurance or liability. Stored on your device; synced to Supabase Storage (EU) only with a paid plan and cloud sync enabled. Visible to move participants you invite. The camera is also used for QR scanning and AR measurement without saving photos for those features.</li>
+        <li><strong>Device:</strong> app version, OS, and technical logs needed for support and security.</li>
+        <li><strong>Voice &amp; AI (optional):</strong> audio you submit for transcription or cloud AI, processed per your settings (on-device models stay on the device unless you use cloud AI).</li>
+        <li><strong>Payments:</strong> transaction IDs and subscription status from Apple, Google, and RevenueCat — we do not store full card numbers.</li>
+        <li><strong>Local data:</strong> inventory stored in on-device databases when you use offline mode.</li>
+      </ul>
+
+      <h2>3. Why we use your data (legal bases)</h2>
+      <ul>
+        <li><strong>Provide the Service</strong> (contract — Art. 6(1)(b) GDPR): account, sync, sharing, billing entitlements.</li>
+        <li><strong>Security &amp; fraud prevention</strong> (legitimate interests — Art. 6(1)(f)): logs, abuse detection.</li>
+        <li><strong>Legal compliance</strong> (legal obligation — Art. 6(1)(c)): tax and accounting records for purchases.</li>
+        <li><strong>Marketing emails</strong> only with your consent (Art. 6(1)(a)) — not sent by default.</li>
+      </ul>
+
+      <h2>4. How we share data</h2>
+      <p>We use trusted processors under data processing agreements:</p>
+      <ul>
+        <li><strong>Supabase</strong> (EU-hosted database, auth &amp; object storage) — cloud inventory sync and condition photos.</li>
+        <li><strong>Apple / Google / RevenueCat</strong> — in-app purchases and subscriptions.</li>
+        <li><strong>Mistral AI and Google (Gemini API)</strong> — cloud AI when you use those features.</li>
+        <li><strong>Move participants you invite</strong> — inventory data and condition photos for shared moves only.</li>
+      </ul>
+      <p>We do not sell your personal data.</p>
+
+      <h2>5. International transfers</h2>
+      <p>We aim to process data in the EU/EEA (Supabase EU regions). Cloud AI requests may be processed by Mistral AI and/or Google outside the EEA; we rely on appropriate safeguards such as Standard Contractual Clauses or adequacy decisions where required.</p>
+
+      <h2>6. Retention</h2>
+      <ul>
+        <li><strong>Account &amp; synced inventory:</strong> kept while your account is active; deleted or anonymized within 30 days after verified deletion request, except where law requires longer retention.</li>
+        <li><strong>Synced condition photos:</strong> deleted with your account or move data; local copies remain on your device until you remove them or uninstall the app.</li>
+        <li><strong>Billing records:</strong> retained as required by tax law (typically up to 10 years).</li>
+        <li><strong>Support logs:</strong> up to 12 months unless needed for security investigations.</li>
+      </ul>
+
+      <h2>7. Your GDPR rights</h2>
+      <p>If you are in the EU/EEA/UK, you have the right to access, rectify, erase, restrict, object (where applicable), and port your data, and to withdraw consent at any time without affecting prior processing. Email <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a> — we respond within one month. You may lodge a complaint with your supervisory authority (e.g. <a href="https://www.datatilsynet.no">Datatilsynet</a> in Norway, or <a href="https://www.cnil.fr">CNIL</a> in France).</p>
+
+      <h2>8. Security</h2>
+      <p>We use encryption in transit (TLS), row-level security on cloud data, and industry-standard access controls. No method is 100% secure — keep your device and email account protected.</p>
+
+      <h2>9. Children</h2>
+      <p>The Service is not directed at children under 16. We do not knowingly collect data from children. Contact us to request deletion if you believe a child provided personal data.</p>
+
+      <h2>10. Changes</h2>
+      <p>We may update this Privacy Policy. We will notify you of material changes in the app and ask for renewed consent when required. Version 2026-07-07. Last updated: July 2026.</p>
+    </section>
+
+    <section id="fr" lang="fr">
+      <h2>1. Qui sommes-nous</h2>
+      <p>MovingMate est publié par <strong>GungnirNet</strong>, développeur indépendant (entrepreneur individuel ; immatriculation ENK norvégienne prévue). L'application est listée sur Google Play sous « GungnirNet ». Pour toute question relative à la protection des données ou pour exercer vos droits : <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a>. Nous agissons en qualité de responsable de traitement pour les données décrites ci-dessous.</p>
+
+      <h2>2. Données collectées</h2>
+      <ul>
+        <li><strong>Compte :</strong> adresse e-mail et identifiants d'authentification (Supabase Auth).</li>
+        <li><strong>Inventaire et déménagements :</strong> descriptions de cartons/meubles, pièces, dimensions, valeurs, identifiants QR, noms de déménagement, codes d'invitation, et données que vous choisissez de synchroniser.</li>
+        <li><strong>Photos d'état (optionnel, offres payantes) :</strong> images JPEG capturées pour documenter l'état des articles (emballage, enlèvement, livraison) à des fins d'assurance ou de responsabilité. Stockées sur l'appareil ; synchronisées vers Supabase Storage (UE) uniquement avec une offre payante et la sync cloud activée. Visibles par les participants invités. La caméra sert aussi au scan QR et à la mesure AR sans enregistrement photo pour ces usages.</li>
+        <li><strong>Appareil :</strong> version de l'app, OS et journaux techniques pour le support et la sécurité.</li>
+        <li><strong>Voix et IA (optionnel) :</strong> audio soumis pour transcription ou IA cloud, selon vos réglages (les modèles on-device restent sur l'appareil sauf usage IA cloud).</li>
+        <li><strong>Paiements :</strong> identifiants de transaction et statut d'abonnement via Apple, Google ou RevenueCat — nous ne stockons pas les numéros de carte complets.</li>
+        <li><strong>Données locales :</strong> inventaire stocké sur l'appareil en mode hors ligne.</li>
+      </ul>
+
+      <h2>3. Finalités et bases légales (RGPD)</h2>
+      <ul>
+        <li><strong>Fourniture du Service</strong> (exécution du contrat — art. 6(1)(b) RGPD) : compte, sync, partage, droits de facturation.</li>
+        <li><strong>Sécurité et prévention de la fraude</strong> (intérêt légitime — art. 6(1)(f)) : journaux, détection d'abus.</li>
+        <li><strong>Obligations légales</strong> (art. 6(1)(c)) : conservation des preuves comptables.</li>
+        <li><strong>E-mails marketing</strong> uniquement avec votre consentement (art. 6(1)(a)) — non envoyés par défaut.</li>
+      </ul>
+
+      <h2>4. Partage des données</h2>
+      <p>Nous faisons appel à des sous-traitants avec accords de traitement :</p>
+      <ul>
+        <li><strong>Supabase</strong> (hébergement UE, base, auth et stockage objet) — synchronisation cloud et photos d'état.</li>
+        <li><strong>Apple / Google / RevenueCat</strong> — achats intégrés et abonnements.</li>
+        <li><strong>Mistral AI et Google (API Gemini)</strong> — IA cloud lorsque vous utilisez ces fonctions.</li>
+        <li><strong>Participants invités</strong> — données d'inventaire et photos d'état du déménagement partagé.</li>
+      </ul>
+      <p>Nous ne vendons pas vos données personnelles.</p>
+
+      <h2>5. Transferts hors UE</h2>
+      <p>Nous visons un traitement dans l'UE/EEE (régions Supabase UE). Les requêtes IA cloud peuvent être traitées par Mistral AI et/ou Google hors EEE ; nous nous appuyons sur des garanties appropriées (clauses contractuelles types, décisions d'adéquation) lorsque requis.</p>
+
+      <h2>6. Durée de conservation</h2>
+      <ul>
+        <li><strong>Compte et inventaire synchronisé :</strong> conservés tant que le compte est actif ; suppression ou anonymisation sous 30 jours après demande vérifiée, sauf obligation légale contraire.</li>
+        <li><strong>Photos d'état synchronisées :</strong> supprimées avec le compte ou les données du déménagement ; les copies locales restent sur l'appareil jusqu'à suppression manuelle ou désinstallation.</li>
+        <li><strong>Données de facturation :</strong> selon les obligations fiscales (jusqu'à 10 ans).</li>
+        <li><strong>Journaux de support :</strong> jusqu'à 12 mois sauf enquête de sécurité.</li>
+      </ul>
+
+      <h2>7. Vos droits RGPD</h2>
+      <p>Si vous êtes dans l'UE/EEE/Royaume-Uni, vous disposez des droits d'accès, de rectification, d'effacement, de limitation, d'opposition (le cas échéant) et de portabilité, ainsi que du retrait du consentement sans affecter le traitement antérieur. Écrivez à <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a> — réponse sous un mois. Vous pouvez saisir votre autorité de contrôle (ex. <a href="https://www.cnil.fr">CNIL</a>, ou <a href="https://www.datatilsynet.no">Datatilsynet</a> en Norvège).</p>
+
+      <h2>8. Sécurité</h2>
+      <p>Chiffrement en transit (TLS), sécurité au niveau des lignes sur les données cloud, et contrôles d'accès standards. Aucune méthode n'est infaillible — protégez votre appareil et votre boîte e-mail.</p>
+
+      <h2>9. Mineurs</h2>
+      <p>Le Service ne s'adresse pas aux moins de 16 ans. Nous ne collectons pas sciemment de données d'enfants. Contactez-nous pour demander la suppression si un mineur a fourni des données.</p>
+
+      <h2>10. Modifications</h2>
+      <p>Nous pouvons mettre à jour cette Politique de confidentialité. Les changements importants seront notifiés dans l'app et un nouveau consentement pourra être demandé. Version 2026-07-07. Dernière mise à jour : juillet 2026.</p>
+    </section>
+
+    <section id="nb" lang="nb">
+      <h2>1. Hvem vi er</h2>
+      <p>MovingMate publiseres av <strong>GungnirNet</strong>, en uavhengig programvareutvikler (enkeltpersonforetak; registrering som norsk ENK er planlagt). Appen er listet på Google Play under « GungnirNet ». For spørsmål om personvern eller for å utøve dine rettigheter, kontakt <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a>. Vi er behandlingsansvarlig for personopplysninger beskrevet nedenfor.</p>
+
+      <h2>2. Hva vi samler inn</h2>
+      <ul>
+        <li><strong>Konto:</strong> e-postadresse og autentiseringsidentifikatorer (Supabase Auth).</li>
+        <li><strong>Inventar og flyttinger:</strong> beskrivelser av esker/møbler, rom, dimensjoner, verdier, QR-identifikatorer, flyttenavn, invitasjonskoder og data du velger å synkronisere til skyen.</li>
+        <li><strong>Tilstandsbilder (valgfritt, betalte planer):</strong> JPEG-bilder du tar for å dokumentere gjenstanders tilstand (pakket, henting, levering) for forsikring eller ansvar. Lagres på enheten; synkroniseres til Supabase Storage (EU) kun med betalt plan og skysynkronisering aktivert. Synlig for flyttedeltakere du inviterer. Kamera brukes også til QR-skanning og AR-måling uten å lagre bilder for disse funksjonene.</li>
+        <li><strong>Enhet:</strong> appversjon, OS og tekniske logger for support og sikkerhet.</li>
+        <li><strong>Stemme og AI (valgfritt):</strong> lyd du sender til transkripsjon eller sky-AI, behandlet etter innstillingene dine (on-device-modeller forblir på enheten med mindre du bruker sky-AI).</li>
+        <li><strong>Betalinger:</strong> transaksjons-ID-er og abonnementsstatus fra Apple, Google eller RevenueCat — vi lagrer ikke fullstendige kortnumre.</li>
+        <li><strong>Lokale data:</strong> inventar lagret i lokale databaser når du bruker offline-modus.</li>
+      </ul>
+
+      <h2>3. Formål og rettslig grunnlag (GDPR)</h2>
+      <ul>
+        <li><strong>Levere Tjenesten</strong> (avtale — art. 6(1)(b) GDPR): konto, synkronisering, deling, faktureringsrettigheter.</li>
+        <li><strong>Sikkerhet og svindelforebygging</strong> (berettiget interesse — art. 6(1)(f)): logger, misbruksdeteksjon.</li>
+        <li><strong>Rettslig etterlevelse</strong> (rettslig forpliktelse — art. 6(1)(c)): regnskapsoppføring for kjøp.</li>
+        <li><strong>Markedsførings-e-post</strong> kun med ditt samtykke (art. 6(1)(a)) — ikke sendt som standard.</li>
+      </ul>
+
+      <h2>4. Deling av data</h2>
+      <p>Vi bruker betrodde databehandlere med databehandleravtaler:</p>
+      <ul>
+        <li><strong>Supabase</strong> (EU-hosting, database, auth og objektlagring) — skysynkronisering og tilstandsbilder.</li>
+        <li><strong>Apple / Google / RevenueCat</strong> — kjøp i appen og abonnementer.</li>
+        <li><strong>Mistral AI og Google (Gemini API)</strong> — sky-AI når du bruker disse funksjonene.</li>
+        <li><strong>Flyttedeltakere du inviterer</strong> — inventardata og tilstandsbilder kun for delte flyttinger.</li>
+      </ul>
+      <p>Vi selger ikke dine personopplysninger.</p>
+
+      <h2>5. Overføringer utenfor EØS</h2>
+      <p>Vi sikter mot behandling i EU/EØS (Supabase EU-regioner). Sky-AI-forespørsler kan behandles av Mistral AI og/eller Google utenfor EØS; vi støtter oss på passende sikkerhetstiltak som standard kontraktsklausuler eller adekvansbeslutninger der det kreves.</p>
+
+      <h2>6. Oppbevaring</h2>
+      <ul>
+        <li><strong>Konto og synkronisert inventar:</strong> beholdes mens kontoen er aktiv; slettes eller anonymiseres innen 30 dager etter verifisert slettingsforespørsel, med mindre loven krever lengre oppbevaring.</li>
+        <li><strong>Synkroniserte tilstandsbilder:</strong> slettes med kontoen eller flyttedata; lokale kopier forblir på enheten til du fjerner dem eller avinstallerer appen.</li>
+        <li><strong>Faktureringsdata:</strong> oppbevares som påkrevd av skattelovgivning (typisk opptil 10 år).</li>
+        <li><strong>Supportlogger:</strong> opptil 12 måneder med mindre nødvendig for sikkerhetsundersøkelser.</li>
+      </ul>
+
+      <h2>7. Dine rettigheter (GDPR)</h2>
+      <p>Hvis du er i EU/EØS/Storbritannia/Norge, har du rett til innsyn, retting, sletting, begrensning, protest (der det gjelder) og dataportabilitet, samt til å trekke tilbake samtykke uten at tidligere behandling påvirkes. Send e-post til <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a> — vi svarer innen én måned. Du kan klage til tilsynsmyndigheten (f.eks. <a href="https://www.datatilsynet.no">Datatilsynet</a> i Norge, eller <a href="https://www.cnil.fr">CNIL</a> i Frankrike).</p>
+
+      <h2>8. Sikkerhet</h2>
+      <p>Vi bruker kryptering under overføring (TLS), radnivåsikkerhet på skydata og industristandard tilgangskontroller. Ingen metode er 100 % sikker — beskytt enheten og e-postkontoen din.</p>
+
+      <h2>9. Barn</h2>
+      <p>Tjenesten er ikke rettet mot barn under 16 år. Vi samler ikke bevisst inn data fra barn. Kontakt oss for å be om sletting hvis du tror et barn har oppgitt personopplysninger.</p>
+
+      <h2>10. Endringer</h2>
+      <p>Vi kan oppdatere denne personvernerklæringen. Vesentlige endringer varsles i appen, og nytt samtykke kan kreves når det er nødvendig. Versjon 2026-07-07. Sist oppdatert: juli 2026.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © GungnirNet · MovingMate · <a href="mailto:movingmate@gungnirnet.eu">movingmate@gungnirnet.eu</a>
+  </footer>
+
+  <script>
+    const links = document.querySelectorAll('nav.lang a');
+    const sections = document.querySelectorAll('main section');
+    function show(lang) {
+      sections.forEach(s => s.classList.toggle('active', s.id === lang));
+      links.forEach(a => a.classList.toggle('active', a.dataset.lang === lang));
+      document.documentElement.lang = lang === 'nb' ? 'nb' : lang;
+    }
+    links.forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        show(a.dataset.lang);
+        history.replaceState(null, '', '#' + a.dataset.lang);
+      });
+    });
+    const hash = location.hash.replace('#', '');
+    if (hash === 'fr' || hash === 'nb' || hash === 'en') show(hash);
+  </script>
+</body>
+</html>
