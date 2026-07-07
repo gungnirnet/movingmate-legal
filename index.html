@@ -7,7 +7,8 @@
   <meta name="description" content="Privacy Policy for MovingMate by GungnirNet. Available in English, French, and Norwegian.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="app_icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="app_icon.png">
   <style>
     :root {
       --bg: #f4f4f5;
@@ -104,25 +105,13 @@
       min-width: 0;
     }
 
-    .brand-mark {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: #000;
-      color: #fff;
-      display: grid;
-      place-items: center;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .04em;
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
       flex-shrink: 0;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .brand-mark {
-        background: #fff;
-        color: #000;
-      }
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
     }
 
     .brand-text {
@@ -178,6 +167,15 @@
 
     .hero {
       padding: 2.5rem 0 1.5rem;
+    }
+
+    .hero-logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
     }
 
     .hero-card {
@@ -467,7 +465,7 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-mark" aria-hidden="true">MM</div>
+        <img class="brand-logo" src="app_icon.png" width="40" height="40" alt="MovingMate">
         <div class="brand-text">
           <strong>MovingMate</strong>
           <span>GungnirNet</span>
@@ -484,6 +482,7 @@
   <div class="page-wrap">
     <div class="hero">
       <div class="hero-card" id="hero-en">
+        <img class="hero-logo" src="app_icon.png" width="72" height="72" alt="MovingMate">
         <div class="eyebrow">Legal · Privacy</div>
         <h1>Privacy Policy</h1>
         <p class="hero-lead">How MovingMate collects, uses, and protects your data. The app works offline by default — cloud sync, AI, and purchases are optional.</p>
@@ -509,6 +508,7 @@
       </div>
 
       <div class="hero-card" id="hero-fr" hidden>
+        <img class="hero-logo" src="app_icon.png" width="72" height="72" alt="MovingMate">
         <div class="eyebrow">Légal · Confidentialité</div>
         <h1>Politique de confidentialité</h1>
         <p class="hero-lead">Comment MovingMate collecte, utilise et protège vos données. L'application fonctionne hors ligne par défaut — synchronisation cloud, IA et achats sont optionnels.</p>
@@ -534,6 +534,7 @@
       </div>
 
       <div class="hero-card" id="hero-nb" hidden>
+        <img class="hero-logo" src="app_icon.png" width="72" height="72" alt="MovingMate">
         <div class="eyebrow">Juridisk · Personvern</div>
         <h1>Personvernerklæring</h1>
         <p class="hero-lead">Hvordan MovingMate samler inn, bruker og beskytter dataene dine. Appen fungerer offline som standard — skysynkronisering, AI og kjøp er valgfritt.</p>
